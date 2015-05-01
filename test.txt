@@ -9,7 +9,7 @@ I propose we add our names:
 Jaimes has added his name to test making a change and pushing it
 to GitHub.
 Patrick has added his name to test making a change and pushing it
-to GitHub. *Edit test from NetBeans IDE*
+to GitHub. *Edit test from NetBeans IDE* *Test edit from cloud9*
 
 // Commit the new version of it to your local repository
 
