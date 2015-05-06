@@ -1,0 +1,30 @@
+Can add/modify the following information in the Repository for
+any research article related to Empirical evidence of a software
+development practice
+
+Information about the Article – (Source of the Evidence
+Bibliographic info – title, authors, journal, year – standard APA format
+Credibility rating of article – number 1-5, reason, who rated it
+What research level – selected from a list of standard research levels
+
+The software development methodology used - selected from a list of
+standard methodologies
+Name and description
+
+The practice(s) being investigated - selected from a list of standard
+Practices (Methods)
+Name and description
+
+The Pieces of Evidence (Evidence Items)
+What benefit or outcome is being tested – description
+Description of Context of the study – description - who, what, where,
+when, how, why
+What the result of the study is – description
+The integrity of the implementation of the practice/method – description
+Confidence Rating of evidence – number 1-5, reason, who rated it
+
+Information about the Research Design
+Research question – description
+Research Method – selected from a standard list
+Research Metrics used – descriptions
+Nature of the Participants – selected from a standard list
