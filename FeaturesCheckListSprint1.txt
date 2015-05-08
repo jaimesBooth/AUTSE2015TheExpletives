@@ -30,3 +30,6 @@ Research question � description
 Research Method � selected from a standard list
 Research Metrics used � descriptions
 Nature of the Participants � selected from a standard list
+
+***All Above is now included on the Paper Submission Form***
+***May need to still implement some database interaction***
