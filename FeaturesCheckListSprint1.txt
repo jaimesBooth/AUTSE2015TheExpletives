@@ -2,8 +2,10 @@ Can add/modify the following information in the Repository for
 any research article related to Empirical evidence of a software
 development practice
 
-Information about the Article � (Source of the Evidence
-Bibliographic info � title, authors, journal, year � standard APA format
+Information about the Article 
+� (Source of the Evidence Bibliographic info 
+� title, authors, journal, year 
+� standard APA format
 Credibility rating of article � number 1-5, reason, who rated it
 What research level � selected from a list of standard research levels
 
