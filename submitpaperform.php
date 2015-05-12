@@ -29,7 +29,7 @@
         
         <h1>Paper Submission Form</h1>
         
-        <form name="submitpaper" action="submitpaperprocess.php" onsubmit="return validateForm()" method="post">
+        <form name="submitpaper" action="submitpaperprocess.php"  method="post">
             
             
             <!--Article Information Form-->
@@ -97,7 +97,7 @@
                 <input type="text" name="practiceIntegrity">
             </label><br>
             <label>Confidence Rating:
-                <select name="confidance">
+                <select name="confidence">
                   <option value="1">CR 1</option>
                   <option value="2">CR 2</option>
                   <option value="3">CR 3</option>
@@ -119,7 +119,7 @@
             
             <!--Start of Research Design Form-->
             <label>Research Discription:
-                <input type="text" name="research Descriptionr">
+                <input type="text" name="researchDescription">
             </label><br>
             <label>Research Method:
                 <select name="method">
@@ -143,8 +143,9 @@
                 </select>
             </label><br>
             <!--End of Research Design Form-->
-            
-            <input type="submit" value="Submit"><br>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </form>
         
