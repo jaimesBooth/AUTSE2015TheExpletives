@@ -20,6 +20,15 @@ h2 {
     text-align: right;
 }
 
+h3 {
+    text-decoration: underline;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 425px;
+    text-align: right;
+}
+
 label{
     display: inline-block;
     float: left;
@@ -53,4 +62,5 @@ section{
 radio{
     float: left;
 }
+
 
