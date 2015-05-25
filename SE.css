@@ -29,12 +29,30 @@ h3 {
     text-align: right;
 }
 
+subtext {
+    text-decoration: underline;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 425px;
+    text-align: center;
+}
+
 label{
     display: inline-block;
     float: left;
     clear: left;
     width: 250px;
     text-align: right;
+}
+
+tablelabel{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
 input {
@@ -63,4 +81,7 @@ radio{
     float: left;
 }
 
+th, td{
+    padding: 10px;
+}
 

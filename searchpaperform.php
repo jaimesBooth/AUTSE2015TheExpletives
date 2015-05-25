@@ -10,7 +10,10 @@
         </header>
         <section>
         <form name="searchpaperr" action="searchpaperprocess.php"  method="post">
-        	<label>Search Query:</label><input type="text" name="searchTerm">
+        	<label>Practice:</label><input type="text" name="searchPractice">
+        	<label>Research Methodology:</label><input type="text" name="searchResearchMethodology">
+        	<label>From:</label><input type="date" name="dateFrom" value="<?php echo date('Y-m-d');?>"> <label>To:</label><input type="date" name="dateTo" value="<?php echo date('Y-m-d');?>">
+        	<label><br></label>
             <input type="submit" value="Submit"><input type="reset" value="Reset">
         </form>
         </section> 

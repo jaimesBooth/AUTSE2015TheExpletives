@@ -36,28 +36,29 @@
                   <option value="0">Other</option>
                 </select>     
             <label>Other Methodology:</label><input type="text" name="otherMethodology">
-            <label>Research Method:</label>
+            <label>Research Practice:</label>
                 <select name="researchMethod">
                   <option value="1">RM 1 - description</option>
                   <option value="2">RM 2 - description</option>
                   <option value="3">RM 3 - description</option>
                   <option value="0">Other</option>
                 </select>
-            <label>Other Method:</label><input type="text" name="otherMethod">    
+            <label>Other:</label><input type="text" name="otherMethod">    
             <br>
             <!--Should be h3, but its messing with position of header-->
-            <label>Method Context:</label>
-            <label>What is the methodused for:</label><input type="text" name="contextWhat">
+            <label><br></label>
+            <label>Practice Context:</label>
+            <label>What is the practice used for:</label><input type="text" name="contextWhat">
             <br>
-            <label>Why was the method used:</label><input type="text" name="contextWhy">
+            <label>Why was the practice used:</label><input type="text" name="contextWhy">
             <br>
-            <label>Where:</label><input type="text" name="contextWhere">
+            <label>Where was practice used:</label><input type="text" name="contextWhere">
             <br>
-            <label>When:</label><input type="text" name="contextWhen">
+            <label>When was the practice used:</label><input type="text" name="contextWhen">
             <br>
-            <label>Who:</label><input type="text" name="contextWho">
+            <label>Who used the practice:</label><input type="text" name="contextWho">
             <br>
-            <label>How:</label><input type="text" name="contextHow">    
+            <label>How was the practice used:</label><input type="text" name="contextHow">    
             <br>
             <label>Benefit/Outcome:</label><input type="text" name="benifitOutcome">
             <br>
@@ -82,39 +83,40 @@
             <!--End of Evidence Item Form-->
             <!--Beginning of evidence source form -->
             <!--<br>-->
-            <!--<label>Credibility:</label>-->
-            <!--   <radio><input type="radio" name="credibility" value="1" checked="true">&#9734;</radio>-->
-            <!--   <radio><input type="radio" name="credibility" value="2">&#9734;&#9734;</radio>-->
-            <!--   <radio><input type="radio" name="credibility" value="3">&#9734;&#9734;&#9734;</radio>-->
-            <!--   <radio><input type="radio" name="credibility" value="4">&#9734;&#9734;&#9734;&#9734;</radio>-->
-            <!--   <radio><input type="radio" name="credibility" value="5">&#9734;&#9734;&#9734;&#9734;&#9734;</radio>-->
-            <!--   <label>Reason:</label><input type="text" name="apareason">-->
-            <!--   <label>Who Rated This:</label><input type="text" name="aparating">-->
-            <!--<br>-->
-            <!--<label>Research Level:</label>-->
-            <!--    <select name="researchLevel">-->
-            <!--      <option value="1">RL 1</option>-->
-            <!--      <option value="2">RL 2</option>-->
-            <!--      <option value="3">RL 3</option>-->
-            <!--      <option value="4">RL 4</option>-->
-            <!--    </select>-->
-            <!--<br>-->
+            <label>Credibility:</label>
+               <radio><input type="radio" name="credibility" value="1" checked="true">&#9734;</radio>
+               <radio><input type="radio" name="credibility" value="2">&#9734;&#9734;</radio>
+               <radio><input type="radio" name="credibility" value="3">&#9734;&#9734;&#9734;</radio>
+               <radio><input type="radio" name="credibility" value="4">&#9734;&#9734;&#9734;&#9734;</radio>
+               <radio><input type="radio" name="credibility" value="5">&#9734;&#9734;&#9734;&#9734;&#9734;</radio>
+               <label>Reason:</label><input type="text" name="apareason">
+               <label>Who Rated This:</label><input type="text" name="aparating">
+            <br>
+            <label>Research Level:</label>
+                <select name="researchLevel">
+                  <option value="1">RL 1</option>
+                  <option value="2">RL 2</option>
+                  <option value="3">RL 3</option>
+                  <option value="4">RL 4</option>
+                </select>
+            <br>
             <!--End of evidence source-->
+            
             <!--Start of Research Design Form-->
-            <!--<label>Research Description:</label><input type="text" name="researchDescription">-->
-            <!--<br>-->
-            <!--<br>-->
-            <!--<label>Research Metrics Used:</label><input type="text" name="researchMetrics">-->
-            <!--<br>-->
-            <!--<label>Participants Nature:</label>-->
-            <!--    <select name="nature">-->
-            <!--      <option value="1">PN 1 - description</option>-->
-            <!--      <option value="2">PN 2 - description</option>-->
-            <!--      <option value="3">PN 3 - description</option>-->
-            <!--      <option value="4">PN 4 - description</option>-->
-            <!--      <option value="5">PN 5 - description</option>-->
-            <!--    </select>-->
-            <!--<br>-->
+            <label>Research Description:</label><input type="text" name="researchDescription">
+            <br>
+            <br>
+            <label>Research Metrics Used:</label><input type="text" name="researchMetrics">
+            <br>
+            <label>Participants Nature:</label>
+                <select name="nature">
+                  <option value="1">PN 1 - description</option>
+                  <option value="2">PN 2 - description</option>
+                  <option value="3">PN 3 - description</option>
+                  <option value="4">PN 4 - description</option>
+                  <option value="5">PN 5 - description</option>
+                </select>
+            <br>
             <!--End of Research Design Form-->
             <br>
             <label><br></label>
