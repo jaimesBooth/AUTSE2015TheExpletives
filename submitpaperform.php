@@ -27,7 +27,7 @@
             <label>Other</label> <input type="radio" name="apaformat" value="noapa"><br>
             <label>(If Other Please Specify):</label><input type="text" name="apa">
             
-            <h2>Research Methodology</h2>
+            <h2>Practice and Methodology Information</h2>
             <label>Research Methodology:</label>
                 <select name="researchMethodology">
                   <option value="1">RM 1 - description</option>
@@ -36,14 +36,14 @@
                   <option value="0">Other</option>
                 </select>     
             <label>Other Methodology:</label><input type="text" name="otherMethodology">
-            <label>Research Practice:</label>
+            <label>Practice:</label>
                 <select name="researchMethod">
                   <option value="1">RP 1 - description</option>
                   <option value="2">RP 2 - description</option>
                   <option value="3">RP 3 - description</option>
                   <option value="0">Other</option>
                 </select>
-            <label>Other:</label><input type="text" name="otherMethod">    
+            <label>Other Practice:</label><input type="text" name="otherMethod">    
             <br>
             <!--Should be h3, but its messing with position of header-->
             <label><br></label>

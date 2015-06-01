@@ -11,6 +11,7 @@
         <section>
         <form name="searchpaperr" action="searchpaperprocess.php"  method="post">
         	<label>Search Articles:</label><input type="text" name="searchPractice">
+        	<label>Search Articles:</label><input type="text" name="searchPractice">
         	<!--<label>Research Methodology:</label><input type="text" name="searchResearchMethodology">-->
         	<!--<label>From:</label><input type="date" name="dateFrom" value="<?php echo date('Y-m-d');?>"> -->
         	<!--<label>To:</label><input type="date" name="dateTo" value="<?php echo date('Y-m-d');?>">-->
