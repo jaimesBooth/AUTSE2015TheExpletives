@@ -27,7 +27,15 @@
 		$conn->select_db($dbnm);	
 		
 		//Creates a variable and stores an sql query to select all rows from the database where the status code or status match the user entered search term
-		//$searchQuery = "SELECT * FROM statusData WHERE status_code LIKE '$searchterm' OR status LIKE '%$searchterm%';";
+		//Need to search for... practice, type of research, year greater and year less - then print to table
+		$searchQuery =<<<SQLBLOCK
+		SELECT * 
+		FROM statusData
+		WHERE status_code 
+		LIKE '$searchterm' 
+		OR status LIKE '%$searchterm%';;
+		
+SQLBLOCK;
 		
 		//Creates a variable and stores the result from the database search
 		$result = $conn->query($searchQuery);

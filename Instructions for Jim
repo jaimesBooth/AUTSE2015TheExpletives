@@ -1,0 +1,7 @@
+To Run this web application please select the index.php file on the left and click run 
+This will open the page in a web browser view which can be used to check all the interfaces
+
+There are links on each page to navigate to the other pages. If a page dosn't display please,
+open the pages .php file (note the process pages is just for the submit and retreval of data)
+
+Some features have been hard coded meaning they do not function but do show the intended result
