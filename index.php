@@ -6,8 +6,8 @@
     <body>
         <h1>SERLER Evidence Repository</h1>
         
-        <a href="submitpaperform.php">Submit a paper.</a>
-        
+        <a href="submitpaperform.php">Submit a paper.</a><br>
+        <a href="searchpaperform.php">Search SERLER.</a>
     </body>
     
 </html>

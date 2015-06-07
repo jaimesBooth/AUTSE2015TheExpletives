@@ -1,17 +1,38 @@
 <?php
 	//Checks the search term is set and not null
-	if(isset($_GET["searchTerm"]) && !empty($_GET["searchTerm"])){
+	if(checkset() && checkNotEmpty()){
 		//Assigns the search term to a local variable
-		$searchTerm = $_GET["searchTerm"];
+		$searchPractice = $_POST["searchPractice"];
+		$searchResearchMethodology = $_POST["searchResearchMethodology"];
+		$dateFrom = $_POST["dateFrom"];
+		$dateTo = $_POST["dateTo"];
 		//Calls a function to query the database using the entered search term
-		searchStatus($searchTerm);
+		searchStatus($searchPractice,$searchResearchMethodology,$dateTo,$dateFrom);
 	}else{
 		//If the search term is not set or null, display an error message
-		echo "Please enter a valid search term.<br>";
+		echo "Please enter valid search criteria<br>";
+	}
+	
+	
+	
+	function checkSet(){
+		if(isset($_POST["searchPractice"],$_POST["searchResearchMethodology"],$_POST["dateFrom"],$_POST["dateTo"])){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	function checkNotEmpty(){
+		if(!empty($_POST["searchPractice"]) && !empty($_POST["searchResearchMethodology"]) && !empty($_POST["dateFrom"]) && !empty($_POST["dateTo"])){
+			return true;
+		}else{
+			return false;
+		}
 	}
 	
 	//A function that checks a provided search term against the database and returns information about any entry that has a matching statuscode or status
-	function searchStatus($searchTerm){
+	function searchStatus($searchPractice,$searchResearchMethodology,$dateTo,$dateFrom){
 		//Requires an external file containing the connection info for tha database
 		require_once ("settings.php");
 		//Creates a connection object using the information provided in settings.php
@@ -30,10 +51,10 @@
 		//Need to search for... practice, type of research, year greater and year less - then print to table
 		$searchQuery =<<<SQLBLOCK
 		SELECT * 
-		FROM statusData
-		WHERE status_code 
-		LIKE '$searchterm' 
-		OR status LIKE '%$searchterm%';;
+		FROM submittedPapersDemo
+		WHERE year >= '$dateFrom'
+		AND year <= '$dateTo'
+		AND researchMethod LIKE '$searchPractice%';
 		
 SQLBLOCK;
 		
@@ -44,28 +65,23 @@ SQLBLOCK;
 		if($result->num_rows > 0){
 			//Iterates through all the rows returned by the database search
 			while ($row = $result->fetch_array()) {		
-				//Prints the information related to each status entry that matches the users search term
-				// echo "<p class='status'>Status Code: " . $row['status_code'] . "<br>";
-				// echo "Status: " . $row['status'] . "<br>";
-				// echo "Date: " . $row['date'] . "<br>";
-				// echo "Share: " . $row['share'] . "<br>";
-				// echo "Permissions: ";
-				// if(!empty($row["permission_like"])){
-				// 	echo "" . $row["permission_like"] . " ";
-				// }
-				// if(!empty($row["permission_comment"])){
-				// 	echo "" . $row["permission_comment"] . " ";
-				// }
-				// if(!empty($row["permission_share"])){
-				// 	echo "" . $row["permission_share"] . " ";
-				// }
-				// echo "<br></p>";
+	
+				echo "<p class='paper'>Title: " . $row['title'] . "<br>";
+				echo "Authors: " . $row['author'] . "<br>";
+				echo "Journal: " . $row['date'] . "<br>";
+				echo "Year: " . $row['year'] . "<br>";
+				echo "Research Methodology: " . $row['researchMethodology'] . "<br>";
+				echo "Practice: " . $row['researchMethod'] . "<br>";
+				echo "<br></p>";
 			}	
+			echo '<a href="index.php">Return home<a><br></p>';
 		}else{
 			//If the database search returns no rows matching the users search term, display an appropriate error message
 			echo "<p>No results found. Please try again.<br></p>";	
+			echo '<a href="searchpaperform.php">Try again?</a>';
 		}
 		//Closes the database connection
 		$conn->close();
 	}
 ?>
+

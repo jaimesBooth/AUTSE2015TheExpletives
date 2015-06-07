@@ -5,3 +5,11 @@ There are links on each page to navigate to the other pages. If a page dosn't di
 open the pages .php file (note the process pages is just for the submit and retreval of data)
 
 Some features have been hard coded meaning they do not function but do show the intended result
+
+
+Main pages:
+
+Index.php - simple home page
+Paperview.html - The result from the Search
+Searchpaperform.php - The search Paper form
+Submitpaperform.php - The sumbit paper form

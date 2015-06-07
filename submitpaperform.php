@@ -23,31 +23,28 @@
             <br>
             <label>Year:</label><input type="text" name="year" size="4" maxlength="4">
             <br>
-            <label>Standard APA</label> <input type="radio" name="apaformat" value="apa" checked="true">
-            <label>Other</label> <input type="radio" name="apaformat" value="noapa"><br>
-            <label>(If Other Please Specify):</label><input type="text" name="apa">
             
             <h2>Practice and Methodology Information</h2>
             <label>Research Methodology:</label>
                 <select name="researchMethodology">
-                  <option value="1">RM 1 - description</option>
-                  <option value="2">RM 2 - description</option>
-                  <option value="3">RM 3 - description</option>
-                  <option value="0">Other</option>
+                  <option value="Descriptive-Qualitative">Descriptive-Qualitative</option>
+                  <option value="Descriptive-Quantitative">Descriptive-Quantitative</option>
+                  <option value="Regression Analyses">Regression Analyses</option>
+                  <option value="Experimental">Experimental</option>
                 </select>     
-            <label>Other Methodology:</label><input type="text" name="otherMethodology">
             <label>Practice:</label>
                 <select name="researchMethod">
-                  <option value="1">RP 1 - description</option>
-                  <option value="2">RP 2 - description</option>
-                  <option value="3">RP 3 - description</option>
-                  <option value="0">Other</option>
+                  <option value="Waterfall Development">Waterfall Development</option>
+                  <option value="Prototyping">Prototyping</option>
+                  <option value="Incremental Development">Incremental Development</option>
+                  <option value="Spiral Development">Spiral Development</option>
+                  <option value="Rapid Application Development">Rapid Application Development</option>
+                  <option value="Agile Development">Agile Development</option>
                 </select>
-            <label>Other Practice:</label><input type="text" name="otherMethod">    
             <br>
             <!--Should be h3, but its messing with position of header-->
             <label><br></label>
-            <label>Practice Context:</label>
+            <h3>Practice Context</h3>
             <label>What is the practice used for:</label><input type="text" name="contextWhat">
             <br>
             <label>Why was the practice used:</label><input type="text" name="contextWhy">
@@ -64,7 +61,7 @@
             <br>
             <label>Result of Study:</label><input type="text" name="methodResult">
             <br>
-            <label>Integritry of practice/method:</label><input type="text" name="methodIntegrity">
+            <label>Integritgy of practice/method:</label><input type="text" name="methodIntegrity">
             <br>
             <label>Confidence Rating:</label>
                 <select name="confidence">
@@ -83,6 +80,7 @@
             <!--End of Evidence Item Form-->
             <!--Beginning of evidence source form -->
             <!--<br>-->
+            <h2>Evidence Source Information</h2>
             <label>Credibility:</label>
                <radio><input type="radio" name="credibility" value="1" checked="true">&#9734;</radio>
                <radio><input type="radio" name="credibility" value="2">&#9734;&#9734;</radio>
